@@ -22,7 +22,6 @@ int main(int argc,char **argv) {
 	double time0, time1;
 	FILE *in;
 	int i, j, k;
-    #pragma omp parallel num_threads(4)
     //num_th = omp_get_max_threads();
 	in=fopen("data.in","r");
 	if(in==NULL) {

@@ -1,0 +1,58 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 502685: <#BSUB -n 5;#BSUB -W 00:30;#BSUB -o my_job.%J.out;#BSUB -e my_job.%J.err;#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./a.out;OMP_NUM_THREADS=2 ./a.out;OMP_NUM_THREADS=4 ./a.out;OMP_NUM_THREADS=8 ./a.out;OMP_NUM_THREADS=16 ./a.out;OMP_NUM_THREADS=32 ./a.out;OMP_NUM_THREADS=64 ./a.out> in cluster <MSUCluster> Exited
+
+Job <#BSUB -n 5;#BSUB -W 00:30;#BSUB -o my_job.%J.out;#BSUB -e my_job.%J.err;#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./a.out;OMP_NUM_THREADS=2 ./a.out;OMP_NUM_THREADS=4 ./a.out;OMP_NUM_THREADS=8 ./a.out;OMP_NUM_THREADS=16 ./a.out;OMP_NUM_THREADS=32 ./a.out;OMP_NUM_THREADS=64 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skpod19-321-12> in cluster <MSUCluster> at Tue Dec  3 15:01:51 2019
+Job was executed on host(s) <5*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skpod19-321-12> in cluster <MSUCluster> at Tue Dec  3 15:01:52 2019
+</home_edu/edu-cmc-skpod19-321/edu-cmc-skpod19-321-12> was used as the home directory.
+</home_edu/edu-cmc-skpod19-321/edu-cmc-skpod19-321-12/VOVAN/GaussOpenMp> was used as the working directory.
+Started at Tue Dec  3 15:01:52 2019
+Terminated at Tue Dec  3 15:31:53 2019
+Results reported at Tue Dec  3 15:31:53 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 5
+#BSUB -W 00:30
+#BSUB -o my_job.%J.out
+#BSUB -e my_job.%J.err
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=1 ./a.out
+OMP_NUM_THREADS=2 ./a.out
+OMP_NUM_THREADS=4 ./a.out
+OMP_NUM_THREADS=8 ./a.out
+OMP_NUM_THREADS=16 ./a.out
+OMP_NUM_THREADS=32 ./a.out
+OMP_NUM_THREADS=64 ./a.out
+
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   2137.00 sec.
+    Max Memory :                                 769 MB
+    Average Memory :                             756.55 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                6
+    Run time :                                   1801 sec.
+    Turnaround time :                            1802 sec.
+
+The output (if any) follows:
+
+GAUSS 10000x10000
+----------------------------------
+Time in seconds=1464.22s
+X=(1, 1, 1, 1, 1, 1, 1, 1, 1, ...)
+
+
+PS:
+
+Read file <my_job.502685.err> for stderr output of this job.
+
