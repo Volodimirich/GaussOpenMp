@@ -1,0 +1,13 @@
+#BSUB -n 5
+#BSUB -W 00:30
+#BSUB -o my_job.%J.out
+#BSUB -e my_job.%J.err
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=1 ./b.out
+OMP_NUM_THREADS=2 ./b.out
+OMP_NUM_THREADS=4 ./b.out
+OMP_NUM_THREADS=8 ./b.out
+OMP_NUM_THREADS=16 ./b.out
+OMP_NUM_THREADS=32 ./b.out
+OMP_NUM_THREADS=64 ./b.out
+OMP_NUM_THREADS=128 ./b.out

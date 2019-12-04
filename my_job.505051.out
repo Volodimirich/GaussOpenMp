@@ -1,0 +1,86 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 505051: <#BSUB -n 5;#BSUB -W 00:30;#BSUB -o my_job.%J.out;#BSUB -e my_job.%J.err;#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./a.out;OMP_NUM_THREADS=2 ./a.out;OMP_NUM_THREADS=4 ./a.out;OMP_NUM_THREADS=8 ./a.out;OMP_NUM_THREADS=16 ./a.out;OMP_NUM_THREADS=32 ./a.out;OMP_NUM_THREADS=64 ./a.out;OMP_NUM_THREADS=128 ./a.out> in cluster <MSUCluster> Done
+
+Job <#BSUB -n 5;#BSUB -W 00:30;#BSUB -o my_job.%J.out;#BSUB -e my_job.%J.err;#BSUB -R "span[hosts=1]";OMP_NUM_THREADS=1 ./a.out;OMP_NUM_THREADS=2 ./a.out;OMP_NUM_THREADS=4 ./a.out;OMP_NUM_THREADS=8 ./a.out;OMP_NUM_THREADS=16 ./a.out;OMP_NUM_THREADS=32 ./a.out;OMP_NUM_THREADS=64 ./a.out;OMP_NUM_THREADS=128 ./a.out> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skpod19-328-10> in cluster <MSUCluster> at Wed Dec  4 17:13:15 2019
+Job was executed on host(s) <5*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skpod19-328-10> in cluster <MSUCluster> at Wed Dec  4 17:13:15 2019
+</home_edu/edu-cmc-skpod19-328/edu-cmc-skpod19-328-10> was used as the home directory.
+</home_edu/edu-cmc-skpod19-328/edu-cmc-skpod19-328-10/vovan/GaussOpenMp> was used as the working directory.
+Started at Wed Dec  4 17:13:15 2019
+Terminated at Wed Dec  4 17:16:50 2019
+Results reported at Wed Dec  4 17:16:50 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 5
+#BSUB -W 00:30
+#BSUB -o my_job.%J.out
+#BSUB -e my_job.%J.err
+#BSUB -R "span[hosts=1]"
+OMP_NUM_THREADS=1 ./a.out
+OMP_NUM_THREADS=2 ./a.out
+OMP_NUM_THREADS=4 ./a.out
+OMP_NUM_THREADS=8 ./a.out
+OMP_NUM_THREADS=16 ./a.out
+OMP_NUM_THREADS=32 ./a.out
+OMP_NUM_THREADS=64 ./a.out
+OMP_NUM_THREADS=128 ./a.out
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1751.61 sec.
+    Max Memory :                                 150 MB
+    Average Memory :                             131.82 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                132
+    Run time :                                   218 sec.
+    Turnaround time :                            215 sec.
+
+The output (if any) follows:
+
+GAUSS 4096x4096
+----------------------------------
+Time in seconds=99.4217s
+X=(1, 1, 1, 1, 1, 1, 1, 1, 1, ...)
+GAUSS 4096x4096
+----------------------------------
+Time in seconds=50.3307s
+X=(1, 1, 1, 1, 1, 1, 1, 1, 1, ...)
+GAUSS 4096x4096
+----------------------------------
+Time in seconds=25.175s
+X=(1, 1, 1, 1, 1, 1, 1, 1, 1, ...)
+GAUSS 4096x4096
+----------------------------------
+Time in seconds=12.8999s
+X=(1, 1, 1, 1, 1, 1, 1, 1, 1, ...)
+GAUSS 4096x4096
+----------------------------------
+Time in seconds=8.59211s
+X=(1, 1, 1, 1, 1, 1, 1, 1, 1, ...)
+GAUSS 4096x4096
+----------------------------------
+Time in seconds=5.85083s
+X=(1, 1, 1, 1, 1, 1, 1, 1, 1, ...)
+GAUSS 4096x4096
+----------------------------------
+Time in seconds=7.11938s
+X=(1, 1, 1, 1, 1, 1, 1, 1, 1, ...)
+GAUSS 4096x4096
+----------------------------------
+Time in seconds=4.69169s
+X=(1, 1, 1, 1, 1, 1, 1, 1, 1, ...)
+
+
+PS:
+
+Read file <my_job.505051.err> for stderr output of this job.
+
