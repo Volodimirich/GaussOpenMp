@@ -23,7 +23,7 @@ int main(int argc,char **argv) {
 	FILE *in;
 	int i, j, k;
     //num_th = omp_get_max_threads();
-	in=fopen("data1.in","r");
+	in=fopen("data.in","r");
 	if(in==NULL) {
 		printf("Can not open 'data.in' "); exit(1);
 	}
